@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Get Selected Font Families",
+    "version": "1.0",
+    "description": "Retrieves the font families of selected text.",
+    "permissions": [
+      "contextMenus",
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
