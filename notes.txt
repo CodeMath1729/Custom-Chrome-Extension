@@ -1,0 +1,44 @@
+What is a Chrome Extension?
+    A Chrome Extension is a small software program built using web technologies (HTML, CSS, and JavaScript) 
+    that adds features and functionalities to the Google Chrome browser. 
+    Extensions can change the browser's interface, automate tasks, or enhance the browsing experience in different ways.
+
+Mandatory Files for a Chrome Extension:
+
+Mandatory Files:
+•	manifest.json: This is required for your extension to function.
+Optional Files:
+•	Background script (background.js)
+•	Popup HTML file (popup.html,popup.html)
+•	Content Scripts (content.js)
+•	Icons (icon.png)
+
+A simple extension might only need a manifest.json file and an optional background script, 
+but more complex extensions will include popup HTML, content scripts, and icons to enhance the user experience.
+
+
+Manifest.json file structure
+{
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "1.0",
+  "description": "This is a simple Chrome extension",
+  "permissions": ["storage", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
+
+
+Background.js:
+
+chrome.action.onClicked.addListener((tab)=>{
+})
+
+
+
+
