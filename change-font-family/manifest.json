@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Change Tab Font",
+    "version": "1.0",
+    "description": "Changes the font family of the current tab.",
+    "permissions": [
+      "contextMenus",
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
